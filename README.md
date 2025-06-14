@@ -32,7 +32,7 @@ Environment Setup
 
 ### Download the Tiny COCO dataset
 
-    Place it in your Google Drive at:
+### Place it in your Google Drive at:
     
         /content/drive/MyDrive/ML_Project2/tiny_coco
         
