@@ -36,7 +36,7 @@ Environment Setup
     
         /content/drive/MyDrive/ML_Project2/tiny_coco
         
-Expected directory structure:
+### Expected directory structure:
 
     tiny_coco/
     └── tiny_coco_dataset-master/
