@@ -30,13 +30,13 @@ Environment Setup
 
 ## Dataset Configuration
 
-### Download the Tiny COCO dataset
+### - Download the Tiny COCO dataset
 
-### Place it in your Google Drive at:
+### - Place it in your Google Drive at:
     
         /content/drive/MyDrive/ML_Project2/tiny_coco
         
-### Expected directory structure:
+### - Expected directory structure:
 
     tiny_coco/
     └── tiny_coco_dataset-master/
@@ -52,7 +52,7 @@ Environment Setup
 
 ## Code Structure
 
-### Setup & Configuration
+### - Setup & Configuration
 
     - Mounts Google Drive    
     - Sets configuration parameters:
@@ -67,7 +67,7 @@ Environment Setup
 
 
 
-### Dataset Preparation
+### - Dataset Preparation
 
     - Verifies dataset existence and structure  
     - Uses COCO API for annotation handling
@@ -80,7 +80,7 @@ Environment Setup
 
 
 
-### Data Augmentation
+### - Data Augmentation
 
     - Applies stochastic transformations:
     
@@ -96,7 +96,7 @@ Environment Setup
 
 
 
-### Model Architecture
+### - Model Architecture
 
         class SSLModel(nn.Module):
             def __init__(self):
@@ -109,9 +109,9 @@ Environment Setup
                 nn.Linear(128*16*16, 256)
             )
 
-### Training Process
+### - Training Process
 
-    - Uses NT-Xent contrastive loss:
+#### - Uses NT-Xent contrastive loss:
     
             def simple_contrastive_loss(z1, z2):
                 z1 = F.normalize(z1, dim=1)
@@ -120,14 +120,14 @@ Environment Setup
                 return F.cross_entropy(sim_matrix, targets)
 
 
-    - AdamW optimizer with learning rate 3e-4
-    - Epoch progress tracking with tqdm
-    - Loss visualization after each epoch
+#### - AdamW optimizer with learning rate 3e-4
+#### - Epoch progress tracking with tqdm
+#### - Loss visualization after each epoch
 
 
 ### Evaluation & Retrieval
 
-    - Generate image embeddings:
+#### - Generate image embeddings:
     
             with torch.no_grad():
                 for idx in range(len(ssl_dataset)):
@@ -135,7 +135,7 @@ Environment Setup
                     embeddings.append(emb.cpu())
 
 
-    - Similarity search function:
+#### - Similarity search function:
     
             def find_similar(query_idx, num_results=3):
                 query_emb = embeddings[query_idx]
