@@ -35,17 +35,17 @@ Expected directory structure:
 
 tiny_coco/
 
-└── tiny_coco_dataset-master/
+    └── tiny_coco_dataset-master/
 
-    ├── annotations/
+        ├── annotations/
     
-    │   └── instances.json 
-    └── images/
+        │   └── instances.json 
+        └── images/
     
-        └── train2017/
-            ├── 000000000009.jpg
-            ├── 000000000025.jpg
-            └── ...
+            └── train2017/
+                ├── 000000000009.jpg
+                ├── 000000000025.jpg
+                └── ...
 
 
 
