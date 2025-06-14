@@ -70,13 +70,15 @@ Environment Setup
 
 ### Phase 2: Dataset Preparation
 
-Verifies dataset existence and structure
-Uses COCO API for annotation handling
-Creates dataset wrapper:
-class TinyCocoSSL(torchvision.datasets.CocoDetection):
-    def __getitem__(self, index):
-        img, _ = super().__getitem__(index)
-        return self.transform(img), self.transform(img)
+    ### Verifies dataset existence and structure
+            
+        Uses COCO API for annotation handling
+    ### Creates dataset wrapper:
+            
+            class TinyCocoSSL(torchvision.datasets.CocoDetection):
+                def __getitem__(self, index):
+                img, _ = super().__getitem__(index)
+                return self.transform(img), self.transform(img)
 
 
 
