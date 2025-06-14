@@ -1,8 +1,8 @@
-Self-Supervised Learning on Tiny COCO Dataset
+# Self-Supervised Learning on Tiny COCO Dataset
 
 This project implements a self-supervised learning approach using contrastive learning on the Tiny COCO dataset. The model learns visual representations without labeled data by maximizing agreement between differently augmented views of the same image.
 
-Features
+## Features
 
 Contrastive learning with dual augmented views
 Custom COCO dataset wrapper
@@ -11,13 +11,13 @@ Image similarity retrieval system
 Training progress visualization
 Environment Setup
 
-Prerequisites
+## Prerequisites
 
 Google Colab (recommended)
 Google Drive account (for dataset storage)
 Python 3.8+
 
-Installation
+## Installation
 
 1. Mount Google Drive in Colab:
 from google.colab import drive
@@ -26,7 +26,7 @@ drive.mount('/content/drive/')
 2. Install required packages:
 !pip install torch torchvision matplotlib numpy tqdm pycocotools requests pillow
 
-Dataset Configuration
+## Dataset Configuration
 
 Download the Tiny COCO dataset
 Place it in your Google Drive at:
@@ -44,9 +44,9 @@ tiny_coco/
 
 
 
-Code Structure
+## Code Structure
 
-Phase 1: Setup & Configuration
+### Phase 1: Setup & Configuration
 
 Mounts Google Drive
 Sets configuration parameters:
@@ -60,7 +60,7 @@ class config:
 
 
 
-Phase 2: Dataset Preparation
+### Phase 2: Dataset Preparation
 
 Verifies dataset existence and structure
 Uses COCO API for annotation handling
@@ -72,7 +72,7 @@ class TinyCocoSSL(torchvision.datasets.CocoDetection):
 
 
 
-Phase 3: Data Augmentation
+### Phase 3: Data Augmentation
 
 Applies stochastic transformations:
 transforms.Compose([
@@ -87,7 +87,7 @@ transforms.Compose([
 
 
 
-Phase 4: Model Architecture
+### Phase 4: Model Architecture
 class SSLModel(nn.Module):
     def __init__(self):
         super().__init__()
@@ -99,7 +99,7 @@ class SSLModel(nn.Module):
             nn.Linear(128*16*16, 256)
         )
 
-Phase 5: Training Process
+### Phase 5: Training Process
 Uses NT-Xent contrastive loss:
 def simple_contrastive_loss(z1, z2):
     z1 = F.normalize(z1, dim=1)
@@ -113,7 +113,7 @@ Epoch progress tracking with tqdm
 Loss visualization after each epoch
 
 
-Phase 6: Evaluation & Retrieval
+### Phase 6: Evaluation & Retrieval
 
 Generate image embeddings:
 with torch.no_grad():
@@ -131,7 +131,7 @@ def find_similar(query_idx, num_results=3):
 
 
 
-Usage
+## Usage
 
 Run all notebook cells sequentially
 Monitor training progress through loss plots
@@ -141,7 +141,7 @@ for _ in range(config.num_retrieval):
     find_similar(random_query)
 
 
-Results
+## Results
 
 Final loss after 24 epochs: 2.05
 Embedding dimension: 256
@@ -160,7 +160,7 @@ model.load_state_dict(torch.load('tiny_coco_ssl.pth'))
 model.eval()
 
 
-Customization
+## Customization
 
 Adjust these parameters for experimentation:
 
@@ -171,7 +171,7 @@ Encoder architecture in SSLModel class
 Augmentation pipeline in ContrastiveTransform
 
 
-Dependencies
+## Dependencies
 torch==2.0.1
 torchvision==0.15.2
 matplotlib==3.7.1
@@ -180,7 +180,7 @@ tqdm==4.65.0
 pycocotools==2.0.7
 Pillow==9.5.0
 
-Done by CHIHAB EL OIDI
+## Done by CHIHAB EL OIDI
 
 
 
