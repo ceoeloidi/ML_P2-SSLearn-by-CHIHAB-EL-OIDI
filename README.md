@@ -52,7 +52,7 @@ Environment Setup
 
 ## Code Structure
 
-### Phase 1: Setup & Configuration
+### Setup & Configuration
 
     - Mounts Google Drive    
     - Sets configuration parameters:
@@ -67,7 +67,7 @@ Environment Setup
 
 
 
-### Phase 2: Dataset Preparation
+### Dataset Preparation
 
     - Verifies dataset existence and structure  
     - Uses COCO API for annotation handling
@@ -80,7 +80,7 @@ Environment Setup
 
 
 
-### Phase 3: Data Augmentation
+### Data Augmentation
 
     - Applies stochastic transformations:
     
@@ -96,7 +96,7 @@ Environment Setup
 
 
 
-### Phase 4: Model Architecture
+### Model Architecture
 
         class SSLModel(nn.Module):
             def __init__(self):
@@ -109,34 +109,38 @@ Environment Setup
                 nn.Linear(128*16*16, 256)
             )
 
-### Phase 5: Training Process
-Uses NT-Xent contrastive loss:
-def simple_contrastive_loss(z1, z2):
-    z1 = F.normalize(z1, dim=1)
-    z2 = F.normalize(z2, dim=1)
-    sim_matrix = torch.mm(z1, z2.T) / config.temperature
-    return F.cross_entropy(sim_matrix, targets)
+### Training Process
+
+    - Uses NT-Xent contrastive loss:
+    
+            def simple_contrastive_loss(z1, z2):
+                z1 = F.normalize(z1, dim=1)
+                z2 = F.normalize(z2, dim=1)
+                sim_matrix = torch.mm(z1, z2.T) / config.temperature
+                return F.cross_entropy(sim_matrix, targets)
 
 
-AdamW optimizer with learning rate 3e-4
-Epoch progress tracking with tqdm
-Loss visualization after each epoch
+    - AdamW optimizer with learning rate 3e-4
+    - Epoch progress tracking with tqdm
+    - Loss visualization after each epoch
 
 
-### Phase 6: Evaluation & Retrieval
+### Evaluation & Retrieval
 
-Generate image embeddings:
-with torch.no_grad():
-    for idx in range(len(ssl_dataset)):
-        emb = model(view1.unsqueeze(0).to(device))
-        embeddings.append(emb.cpu())
+    - Generate image embeddings:
+    
+            with torch.no_grad():
+                for idx in range(len(ssl_dataset)):
+                    emb = model(view1.unsqueeze(0).to(device))
+                    embeddings.append(emb.cpu())
 
 
-Similarity search function:
-def find_similar(query_idx, num_results=3):
-    query_emb = embeddings[query_idx]
-    similarities = torch.mm(embeddings, query_emb.unsqueeze(1)).squeeze()
-    _, indices = torch.topk(similarities, num_results+1)
+    - Similarity search function:
+    
+            def find_similar(query_idx, num_results=3):
+                query_emb = embeddings[query_idx]
+                    similarities = torch.mm(embeddings, query_emb.unsqueeze(1)).squeeze()
+                    _, indices = torch.topk(similarities, num_results+1)
 
 
 
