@@ -139,20 +139,21 @@ Environment Setup
     
             def find_similar(query_idx, num_results=3):
                 query_emb = embeddings[query_idx]
-                    similarities = torch.mm(embeddings, query_emb.unsqueeze(1)).squeeze()
-                    _, indices = torch.topk(similarities, num_results+1)
+                similarities = torch.mm(embeddings, query_emb.unsqueeze(1)).squeeze()
+                _, indices = torch.topk(similarities, num_results+1)
 
 
 
 
 ## Usage
 
-Run all notebook cells sequentially
-Monitor training progress through loss plots
-After training, retrieve similar images:
-for _ in range(config.num_retrieval):
-    random_query = random.randint(0, len(ssl_dataset) - 1)
-    find_similar(random_query)
+    - Run all notebook cells sequentially
+    - Monitor training progress through loss plots
+    - After training, retrieve similar images:
+    
+        for _ in range(config.num_retrieval):
+            random_query = random.randint(0, len(ssl_dataset) - 1)
+            find_similar(random_query)
 
 
 ## Results
