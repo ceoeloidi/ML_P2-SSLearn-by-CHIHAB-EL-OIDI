@@ -54,15 +54,17 @@ Environment Setup
 
 ### Phase 1: Setup & Configuration
 
-Mounts Google Drive
-Sets configuration parameters:
-class config:
-    data_dir = "/content/drive/MyDrive/ML_Project2/tiny_coco"
-    img_size = 128
-    batch_size = 64
-    num_epochs = 24
-    temperature = 0.1
-    projection_dim = 64
+    ### Mounts Google Drive
+        
+        Sets configuration parameters:
+
+            class config:
+                data_dir = "/content/drive/MyDrive/ML_Project2/tiny_coco"
+                img_size = 128
+                batch_size = 64
+                num_epochs = 24
+                temperature = 0.1
+                projection_dim = 64
 
 
 
