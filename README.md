@@ -20,11 +20,13 @@ Environment Setup
 ## Installation
 
 1. Mount Google Drive in Colab:
-from google.colab import drive
-drive.mount('/content/drive/')
+   
+    from google.colab import drive
+    drive.mount('/content/drive/')
 
-2. Install required packages:
-!pip install torch torchvision matplotlib numpy tqdm pycocotools requests pillow
+3. Install required packages:
+   
+    !pip install torch torchvision matplotlib numpy tqdm pycocotools requests pillow
 
 ## Dataset Configuration
 
