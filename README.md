@@ -33,7 +33,7 @@ Place it in your Google Drive at:
 /content/drive/MyDrive/ML_Project2/tiny_coco
 Expected directory structure:
 
-tiny_coco/
+    tiny_coco/
 
     └── tiny_coco_dataset-master/
 
