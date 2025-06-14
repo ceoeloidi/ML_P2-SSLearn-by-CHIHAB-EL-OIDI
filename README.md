@@ -26,7 +26,7 @@ Environment Setup
 
 3. Install required packages:
    
-    !pip install torch torchvision matplotlib numpy tqdm pycocotools requests pillow
+        !pip install torch torchvision matplotlib numpy tqdm pycocotools requests pillow
 
 ## Dataset Configuration
 
