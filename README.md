@@ -82,16 +82,17 @@ Environment Setup
 
 ### Phase 3: Data Augmentation
 
-Applies stochastic transformations:
-transforms.Compose([
-    transforms.RandomResizedCrop(config.img_size, scale=(0.2, 1.0)),
-    transforms.RandomHorizontalFlip(p=0.5),
-    transforms.ColorJitter(0.4, 0.4, 0.4, 0.1),
-    transforms.RandomGrayscale(p=0.2),
-    transforms.GaussianBlur(kernel_size=9),
-    transforms.ToTensor(),
-    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-])
+    - Applies stochastic transformations:
+    
+        transforms.Compose([
+            transforms.RandomResizedCrop(config.img_size, scale=(0.2, 1.0)),
+            transforms.RandomHorizontalFlip(p=0.5),
+            transforms.ColorJitter(0.4, 0.4, 0.4, 0.1),
+            transforms.RandomGrayscale(p=0.2),
+            transforms.GaussianBlur(kernel_size=9),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        ])
 
 
 
