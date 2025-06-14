@@ -22,6 +22,7 @@ Environment Setup
 1. Mount Google Drive in Colab:
    
     from google.colab import drive
+   
     drive.mount('/content/drive/')
 
 3. Install required packages:
