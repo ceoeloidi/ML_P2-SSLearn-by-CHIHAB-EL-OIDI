@@ -35,7 +35,6 @@ Expected directory structure:
 tiny_coco/
 
 └── tiny_coco_dataset-master/
-
     ├── annotations/
     
     │   └── instances.json 
