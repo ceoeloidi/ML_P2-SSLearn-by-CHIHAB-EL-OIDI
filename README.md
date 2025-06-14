@@ -147,9 +147,9 @@ Environment Setup
 
 ## Usage
 
-    - Run all notebook cells sequentially
-    - Monitor training progress through loss plots
-    - After training, retrieve similar images:
+#### - Run all notebook cells sequentially
+#### - Monitor training progress through loss plots
+#### - After training, retrieve similar images:
     
         for _ in range(config.num_retrieval):
             random_query = random.randint(0, len(ssl_dataset) - 1)
@@ -158,32 +158,34 @@ Environment Setup
 
 ## Results
 
-Final loss after 24 epochs: 2.05
-Embedding dimension: 256
-Sample retrieval shows semantically similar images
+#### - Final loss after 24 epochs: 2.05
+#### - Embedding dimension: 256
+#### - Sample retrieval shows semantically similar images
 
 
-Saving & Loading Models
+## Saving & Loading Models
 
-Save trained model:
-torch.save(model.state_dict(), 'tiny_coco_ssl.pth')
+#### Save trained model:
+
+        torch.save(model.state_dict(), 'tiny_coco_ssl.pth')
 
 
-Load for inference:
-model = SSLModel().to(device)
-model.load_state_dict(torch.load('tiny_coco_ssl.pth'))
-model.eval()
+#### Load for inference:
+
+        model = SSLModel().to(device)
+        model.load_state_dict(torch.load('tiny_coco_ssl.pth'))
+        model.eval()
 
 
 ## Customization
 
-Adjust these parameters for experimentation:
+#### Adjust these parameters for experimentation:
 
-config.img_size: Input image size
-config.batch_size: Training batch size
-config.temperature: Contrastive loss temperature
-Encoder architecture in SSLModel class
-Augmentation pipeline in ContrastiveTransform
+#### - config.img_size: Input image size
+#### - config.batch_size: Training batch size
+#### - config.temperature: Contrastive loss temperature
+#### - Encoder architecture in SSLModel class
+#### - Augmentation pipeline in ContrastiveTransform
 
 
 ## Dependencies
