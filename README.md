@@ -181,11 +181,11 @@ Environment Setup
 
 #### Adjust these parameters for experimentation:
 
-#### - config.img_size: Input image size
-#### - config.batch_size: Training batch size
-#### - config.temperature: Contrastive loss temperature
-#### - Encoder architecture in SSLModel class
-#### - Augmentation pipeline in ContrastiveTransform
+ - config.img_size: Input image size
+ - config.batch_size: Training batch size
+ - config.temperature: Contrastive loss temperature
+ - Encoder architecture in SSLModel class
+ - Augmentation pipeline in ContrastiveTransform
 
 
 ## Dependencies
