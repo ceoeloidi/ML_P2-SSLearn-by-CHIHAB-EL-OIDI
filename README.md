@@ -34,6 +34,7 @@ Place it in your Google Drive at:
 Expected directory structure:
 
 tiny_coco/
+
 └── tiny_coco_dataset-master/
 
     ├── annotations/
