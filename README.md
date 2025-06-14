@@ -111,7 +111,7 @@ Environment Setup
 
 ### - Training Process
 
-#### - Uses NT-Xent contrastive loss:
+ - Uses NT-Xent contrastive loss:
     
             def simple_contrastive_loss(z1, z2):
                 z1 = F.normalize(z1, dim=1)
@@ -120,9 +120,9 @@ Environment Setup
                 return F.cross_entropy(sim_matrix, targets)
 
 
-#### - AdamW optimizer with learning rate 3e-4
-#### - Epoch progress tracking with tqdm
-#### - Loss visualization after each epoch
+ - AdamW optimizer with learning rate 3e-4
+ - Epoch progress tracking with tqdm
+ - Loss visualization after each epoch
 
 
 ### Evaluation & Retrieval
