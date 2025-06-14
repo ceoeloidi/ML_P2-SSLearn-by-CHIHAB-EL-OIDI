@@ -54,8 +54,7 @@ Environment Setup
 
 ### Phase 1: Setup & Configuration
 
-    - Mounts Google Drive
-        
+    - Mounts Google Drive    
     - Sets configuration parameters:
 
             class config:
