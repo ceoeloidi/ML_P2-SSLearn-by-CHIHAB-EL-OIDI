@@ -13,9 +13,9 @@ Environment Setup
 
 ## Prerequisites
 
-    - Google Colab (recommended)
-    - Google Drive account (for dataset storage)
-    - Python 3.8+
+#### - Google Colab (recommended)
+#### - Google Drive account (for dataset storage)
+#### - Python 3.8+
 
 ## Installation
 
