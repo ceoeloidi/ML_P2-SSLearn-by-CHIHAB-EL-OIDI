@@ -33,10 +33,14 @@ Place it in your Google Drive at:
 /content/drive/MyDrive/ML_Project2/tiny_coco
 Expected directory structure:
 tiny_coco/
+
 └── tiny_coco_dataset-master/
+
     ├── annotations/
-    │   └── instances.json
+    
+    │   └── instances.json 
     └── images/
+    
         └── train2017/
             ├── 000000000009.jpg
             ├── 000000000025.jpg
