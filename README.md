@@ -158,9 +158,9 @@ Environment Setup
 
 ## Results
 
-#### - Final loss after 24 epochs: 2.05
-#### - Embedding dimension: 256
-#### - Sample retrieval shows semantically similar images
+ - Final loss after 24 epochs: 2.05
+ - Embedding dimension: 256
+ - Sample retrieval shows semantically similar images
 
 
 ## Saving & Loading Models
