@@ -6,7 +6,7 @@ This project implements a self-supervised learning approach using contrastive le
 
 - [Features](#-Features)
 - [Prerequisites](#-Prerequisites)
-
+- [Installation](#-Installation)
 
 ## Features
 
