@@ -144,7 +144,7 @@ Environment Setup
  - Loss visualization after each epoch
 
 
-### Evaluation & Retrieval
+### - Evaluation & Retrieval
 
 #### - Generate image embeddings:
     
