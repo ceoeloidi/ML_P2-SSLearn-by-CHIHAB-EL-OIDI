@@ -20,6 +20,7 @@ This project implements a self-supervised learning approach using contrastive le
   - [Model Architecture](#--model-architecture)
   - [Training Process](#--training-process)
   - [Evaluation & Retrieval](#evaluation--retrieval)
+- [Usage](#usage)
 
 ## Features
 
