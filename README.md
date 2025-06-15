@@ -15,6 +15,7 @@ This project implements a self-supervised learning approach using contrastive le
   - [Expected directory structure](#--expected-directory-structure)
 - [Code Structure](#code-structure)
   - [Setup & Configuration](#--setup--configuration)
+  - [Dataset Preparation](#--dataset-preparation)
 
 ## Features
 
