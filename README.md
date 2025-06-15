@@ -23,7 +23,8 @@ This project implements a self-supervised learning approach using contrastive le
 - [Usage](#usage)
 - [Results](#results)
 - [Saving & Loading Models](#saving--loading-models)
-- 
+  - [Save trained model](#save-trained-model)
+  - [Load for inference](
 
 ## Features
 
