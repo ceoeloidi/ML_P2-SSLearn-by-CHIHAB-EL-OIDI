@@ -42,7 +42,7 @@ Environment Setup
 
 ## Dataset Configuration
 
-### - Download the Tiny COCO dataset
+### - Download the Tiny COCO dataset : [https://github.com/lizhogn/tiny_coco_dataset/tree/master]
 
 ### - Place it in your Google Drive at:
     
