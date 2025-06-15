@@ -2,6 +2,9 @@
 
 This project implements a self-supervised learning approach using contrastive learning on the Tiny COCO dataset. The model learns visual representations without labeled data by maximizing agreement between differently augmented views of the same image.
 
+![Uploading 10a.gif…]()
+
+
 ## Table of Contents
 
 - [Demo Media](#demo-media)
