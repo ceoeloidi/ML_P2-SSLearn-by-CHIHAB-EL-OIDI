@@ -146,7 +146,7 @@ Environment Setup
 
 ### - Evaluation & Retrieval
 
-#### - Generate image embeddings:
+ - Generate image embeddings:
     
             with torch.no_grad():
                 for idx in range(len(ssl_dataset)):
@@ -154,7 +154,7 @@ Environment Setup
                     embeddings.append(emb.cpu())
 
 
-#### - Similarity search function:
+ - Similarity search function:
     
             def find_similar(query_idx, num_results=3):
                 query_emb = embeddings[query_idx]
