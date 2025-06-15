@@ -22,6 +22,8 @@ This project implements a self-supervised learning approach using contrastive le
   - [Evaluation & Retrieval](#evaluation--retrieval)
 - [Usage](#usage)
 - [Results](#results)
+- [Saving & Loading Models](#saving--loading-models)
+- 
 
 ## Features
 
