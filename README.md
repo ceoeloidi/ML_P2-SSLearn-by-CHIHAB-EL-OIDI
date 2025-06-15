@@ -4,6 +4,7 @@ This project implements a self-supervised learning approach using contrastive le
 
 ## Table of Contents
 
+- [Demo Media](#demo-media)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
