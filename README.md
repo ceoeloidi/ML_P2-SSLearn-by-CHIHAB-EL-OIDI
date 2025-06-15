@@ -7,6 +7,7 @@ This project implements a self-supervised learning approach using contrastive le
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
+  
         - [1. Mount Google Drive in Colab:](#1-mount-google-drive-in-colab)
 
 ## Features
