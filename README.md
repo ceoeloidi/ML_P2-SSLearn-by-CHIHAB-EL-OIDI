@@ -4,7 +4,7 @@ This project implements a self-supervised learning approach using contrastive le
 
 ## Table of Contents
 
-        - Features #-Features
+- [Features](#-Features)
 
 
 
