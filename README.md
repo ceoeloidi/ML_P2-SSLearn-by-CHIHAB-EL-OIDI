@@ -26,6 +26,7 @@ This project implements a self-supervised learning approach using contrastive le
   - [Save trained model](#save-trained-model)
   - [Load for inference](#load-for-inference)
 - [Customization](#customization)
+- [Dependencies](#dependencies)
 
 ## Features
 
