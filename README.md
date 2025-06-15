@@ -16,6 +16,7 @@ This project implements a self-supervised learning approach using contrastive le
 - [Code Structure](#code-structure)
   - [Setup & Configuration](#--setup--configuration)
   - [Dataset Preparation](#--dataset-preparation)
+  - [Data Augmentation](#--data-augmentation)
 
 ## Features
 
