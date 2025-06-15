@@ -28,6 +28,12 @@ This project implements a self-supervised learning approach using contrastive le
 - [Customization](#customization)
 - [Dependencies](#dependencies)
 
+
+## Demo Media
+
+You can view it either by downloading it from this repo with the filename: 
+
+
 ## Features
 
 Contrastive learning with dual augmented views
