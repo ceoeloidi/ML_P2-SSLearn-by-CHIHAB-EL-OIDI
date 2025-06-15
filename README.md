@@ -12,6 +12,7 @@ This project implements a self-supervised learning approach using contrastive le
 - [Dataset Configuration](#dataset-configuration)
   - [Download the Tiny COCO dataset](#--download-the-tiny-coco-dataset)
   - [Place it in your Google Drive at:](#--place-it-in-your-google-drive-at)
+  - [Expected directory structure:](#--expected-directory-structure)
 
 ## Features
 
