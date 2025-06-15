@@ -18,7 +18,7 @@ This project implements a self-supervised learning approach using contrastive le
   - [Dataset Preparation](#--dataset-preparation)
   - [Data Augmentation](#--data-augmentation)
   - [Model Architecture](#--model-architecture)
-  - [Training Process](
+  - [Training Process](#--training-process)
 
 ## Features
 
