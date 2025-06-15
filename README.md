@@ -21,6 +21,7 @@ This project implements a self-supervised learning approach using contrastive le
   - [Training Process](#--training-process)
   - [Evaluation & Retrieval](#evaluation--retrieval)
 - [Usage](#usage)
+- [Results](#results)
 
 ## Features
 
